@@ -1,0 +1,14 @@
+body {
+    padding-top: 75px;
+}
+.checkbox.list-item {
+    position: relative;
+}
+.checkbox.list-item button.btn-xs {
+    position: absolute;
+    right: 0;
+}
+.checkbox.list-item.done > label {
+    text-decoration: line-through;
+    color: darkgray;
+}

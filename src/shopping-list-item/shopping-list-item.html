@@ -1,0 +1,10 @@
+<template>
+  <div class="checkbox list-item" css-class="name: done; value.bind: item.done">
+    <label>
+      <input type="checkbox" checked.bind="item.done"> ${item.text}
+      <button type="button" class="btn btn-danger btn-xs" click.delegate="remove()" if.bind="item.done">
+        <span class="glyphicon glyphicon-trash"></span>
+      </button>
+    </label>
+  </div>
+</template>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <title>Shopping List</title>
+  <link rel="stylesheet" href="jspm_packages/npm/font-awesome@4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/shopping-list.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Shopping List</a>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+
+    <div class="col-xs-4 col-xs-offset-3" aurelia-app="main">
+      <div class="splash">
+        <div class="message">Aurelia Shopping List</div>
+        <i class="fa fa-spinner fa-spin"></i>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="jspm_packages/system.js"></script>
+<script src="config.js"></script>
+<script>
+  System.import('aurelia-bootstrapper')
+    .catch(function (error) {
+      console.error(error);
+    });
+</script>
+</body>
+</html>
