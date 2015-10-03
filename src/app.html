@@ -1,18 +1,10 @@
 <template>
-  <require from="shopping-list-item/shopping-list-item"></require>
-  <require from="new-list-item/new-list-item"></require>
 
   <div class="panel panel-default">
     <div class="panel-heading">
       <h3 class="panel-title">Shopping List</h3>
     </div>
     <div class="panel-body">
-
-      <shopping-list-item repeat.for="item of list.items" item.bind="item"></shopping-list-item>
-
-      <hr>
-
-      <new-list-item></new-list-item>
 
     </div>
   </div>
