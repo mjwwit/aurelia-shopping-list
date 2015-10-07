@@ -2,15 +2,17 @@ import {singleton} from 'aurelia-framework';
 
 @singleton()
 export class ShoppingList {
-    items = [
+    constructor() {
+      this.items = [
         {
-            text: 'Milk',
-            done: false
+          text: 'Milk',
+          done: false
         }, {
-            text: 'Cheese',
-            done: true
+          text: 'Cheese',
+          done: true
         }
-    ];
+      ];
+    }
 
     add(item) {
         this.items.push(item);
